@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Drawer</string>
+    <string name="app_name">Vanilla App</string>
     <string name="profile_image">Profile Image</string>
     <string name="home">Home</string>
     <string name="post_ad">Post Ad</string>
