@@ -69,6 +69,9 @@ class MainActivity : AppCompatActivity() {
 
 
     private fun setupNavMenu() {
+        val widthOfNav = resources.displayMetrics.widthPixels * 0.9
+        navView.layoutParams.width = widthOfNav.toInt()
+        navView.requestLayout()
         navView.setNavigationItemSelectedListener {
             drawer.closeDrawers()
             Toast.makeText(this, R.string.coming_soon, Toast.LENGTH_LONG).show()
