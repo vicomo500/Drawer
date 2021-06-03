@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!-- decoy space used to center the text in case of small wrapped width -->
+    <Space
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        />
+
+    <TextView
+        android:id="@+id/badge_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:text="@string/_0"
+        android:textColor="@color/white"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textSize="@dimen/text_size_smallest"
+        android:background="@drawable/badge_background"
+        android:paddingHorizontal="@dimen/margin_med"
+        android:paddingVertical="@dimen/margin_extra_min"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="@dimen/margin_med"
+        />
+
+</RelativeLayout>

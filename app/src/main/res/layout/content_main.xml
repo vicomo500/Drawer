@@ -19,22 +19,30 @@
 
         </com.google.android.material.appbar.AppBarLayout>
 
-        <Button
-            android:id="@+id/increment_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_large"
-            android:layout_gravity="center"
-            android:text="@string/increment"
-            />
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <include
+                    android:id="@+id/my_ads_counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/counter_layout"
+                    />
 
-        <Button
-            android:id="@+id/reset_button"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/margin_large"
-            android:layout_gravity="center"
-            android:text="@string/reset"
-            />
+                <include
+                    android:id="@+id/messages_counter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout="@layout/counter_layout"
+                    android:layout_marginTop="@dimen/margin_med"
+                    />
+            </LinearLayout>
+        </ScrollView>
     </LinearLayout>
 </merge>

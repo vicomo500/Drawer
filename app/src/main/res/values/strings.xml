@@ -18,4 +18,10 @@
     <string name="navigation_drawer_close">close</string>
     <string name="ringier_logo">Ringier Logo</string>
     <string name="coming_soon">Coming Soon</string>
+    <string name="_0">0</string>
+    <plurals name="ad_views_count">
+        <item quantity="one">%d view</item>
+        <item quantity="other">%d views</item>
+    </plurals>
+    <string name="expected_ad_or_msg_type">An error occurred: set up badge method parameter requires either 1 or 2</string>
 </resources>
